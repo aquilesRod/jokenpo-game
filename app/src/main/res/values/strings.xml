@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jokenpo</string>
+    <string name="button_send">Enviar</string>
+    <string name="button_about_app">Sobre o app</string>
+    <string name="input_name">Insira seu nickname</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_abi">Abi</string>
+    <string name="button_aquiles">Aquiles</string>
+    <string name="button_bruno">Bruno</string>
+</resources>

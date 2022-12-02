@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_about_home">
+
+    <fragment
+        android:id="@+id/fragment_about_home"
+        android:name="com.example.gamedemo.fragments.fragment_about_home"
+        android:label="fragment_about_home"
+        tools:layout="@layout/fragment_about_home">
+        <action
+            android:id="@+id/action_fragment_about_home_to_fragment_about_abi"
+            app:destination="@id/fragment_about_abi" />
+        <action
+            android:id="@+id/action_fragment_about_home_to_fragment_about_aquiles"
+            app:destination="@id/fragment_about_aquiles" />
+        <action
+            android:id="@+id/action_fragment_about_home_to_fragment_about_bruno"
+            app:destination="@id/fragment_about_bruno" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_about_abi"
+        android:name="com.example.gamedemo.fragments.fragment_about_abi"
+        android:label="fragment_about_abi"
+        tools:layout="@layout/fragment_about_abi">
+        <action
+            android:id="@+id/action_fragment_about_abi_to_fragment_about_home"
+            app:destination="@id/fragment_about_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_about_aquiles"
+        android:name="com.example.gamedemo.fragments.fragment_about_aquiles"
+        android:label="fragment_about_aquiles"
+        tools:layout="@layout/fragment_about_aquiles">
+        <action
+            android:id="@+id/action_fragment_about_aquiles_to_fragment_about_home"
+            app:destination="@id/fragment_about_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_about_bruno"
+        android:name="com.example.gamedemo.fragments.fragment_about_bruno"
+        android:label="fragment_about_bruno"
+        tools:layout="@layout/fragment_about_bruno">
+        <action
+            android:id="@+id/action_fragment_about_bruno_to_fragment_about_home"
+            app:destination="@id/fragment_about_home" />
+    </fragment>
+</navigation>
